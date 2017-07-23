@@ -1,0 +1,36 @@
+Steps to start using the bitfile and image
+1. Steps to load bit file
+   	*open the project in vivado.
+   	*In the Flow Navigator > Program and Debug > open target > in target device click on auto connect.
+   	*In the green Banner click on program device.
+  	*go to the target bit file and select finish.
+2.Steps to open putty
+   	*Open a new terminal
+   	*sudo putty -serial /dev/dev/ttyUSB1 -serfg 115200,8,n,1,N
+3. command to load linux image
+   	*open a new terminal.
+	*first source peta linux in a new terminal.
+	*the source file is present in petalinux binaries > settings.sh
+	*source settings.sh.
+	*Go to the file that has the image file.
+	*it will be in petalinux_fullsystem>images>linux>images.elf
+	*type xmd in Xterm.
+	*the XMD terminal will be opened.
+	*in the xmd terminal type 'connect mb mdm'
+	*the system is now connected and then we have to download the image file.
+	*type the command 'dow image.elf'. make sure that you are present in the same directory the image file is present
+	*The downloading phase starts.
+	*connect the device with starting address by typing 'con 0x80000000'
+	*If a error comes (type stop and then type reset.Again start by downloading the image.elf file.)
+	
+4. login into putty and run example
+	*Now you can find the PUTTY terminal finish its run. it takes some minutes to finish running. we can say it has fully run when it shows the root login. login id and password is 		'root'.
+	*Type gpio-demo-g 508 -o 0xf
+	*Here 508 denotes the device_id. to find the different device id's we have to find the root where the details regarding it is present.
+	*For that go to the normal terminal and go to directory 
+	/home/ramprasad/arty_projects_10-7-2017/petalinux_arty_fullsystem/peta_p2/project-spec/meta-user/recipes-apps/gpio-demo/files
+	*There you will find the file 'gpio-demo.c'.Open it using gvim.
+	*In the c file you will find the gpio root in the '#define GPIO_ROOT "/sys/class/gpio" '
+	*go to PUTTY terminal and go the root mentioned in the above point.
+	*there you will find the device id's.
+	* Now type 'gpio-demo-g 508 -o 0xf'
