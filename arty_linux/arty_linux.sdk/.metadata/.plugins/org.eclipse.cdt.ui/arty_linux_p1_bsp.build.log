@@ -1,0 +1,6 @@
+13:43:24 **** Auto Build of project arty_linux_p1_bsp ****
+make -k all 
+make: Nothing to be done for `all'.
+
+13:43:24 Build Finished (took 85ms)
+

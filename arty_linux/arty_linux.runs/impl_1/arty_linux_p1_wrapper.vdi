@@ -1,0 +1,719 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Jul 15 12:32:32 2017
+# Process ID: 4158
+# Current directory: /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1
+# Command line: vivado -log arty_linux_p1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source arty_linux_p1_wrapper.tcl -notrace
+# Log file: /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/arty_linux_p1_wrapper.vdi
+# Journal file: /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source arty_linux_p1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.2/data/ip'.
+add_files: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1214.777 ; gain = 98.730 ; free physical = 514 ; free virtual = 10296
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_ethernetlite_0_0/arty_linux_p1_axi_ethernetlite_0_0.dcp' for cell 'arty_linux_p1_i/axi_ethernetlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_0_0/arty_linux_p1_axi_gpio_0_0.dcp' for cell 'arty_linux_p1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_1_0/arty_linux_p1_axi_gpio_1_0.dcp' for cell 'arty_linux_p1_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_2_0/arty_linux_p1_axi_gpio_2_0.dcp' for cell 'arty_linux_p1_i/axi_gpio_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_quad_spi_0_0/arty_linux_p1_axi_quad_spi_0_0.dcp' for cell 'arty_linux_p1_i/axi_quad_spi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_smc_0/arty_linux_p1_axi_smc_0.dcp' for cell 'arty_linux_p1_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_timer_0_0/arty_linux_p1_axi_timer_0_0.dcp' for cell 'arty_linux_p1_i/axi_timer_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_uartlite_0_0/arty_linux_p1_axi_uartlite_0_0.dcp' for cell 'arty_linux_p1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0.dcp' for cell 'arty_linux_p1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_mdm_1_0/arty_linux_p1_mdm_1_0.dcp' for cell 'arty_linux_p1_i/mdm_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_0/arty_linux_p1_microblaze_0_0.dcp' for cell 'arty_linux_p1_i/microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_axi_intc_0/arty_linux_p1_microblaze_0_axi_intc_0.dcp' for cell 'arty_linux_p1_i/microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_xlconcat_0/arty_linux_p1_microblaze_0_xlconcat_0.dcp' for cell 'arty_linux_p1_i/microblaze_0_xlconcat'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_mig_7series_0_0/arty_linux_p1_mig_7series_0_0.dcp' for cell 'arty_linux_p1_i/mig_7series_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_rst_mig_7series_0_83M_0/arty_linux_p1_rst_mig_7series_0_83M_0.dcp' for cell 'arty_linux_p1_i/rst_mig_7series_0_83M'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_xbar_0/arty_linux_p1_xbar_0.dcp' for cell 'arty_linux_p1_i/microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_dlmb_bram_if_cntlr_0/arty_linux_p1_dlmb_bram_if_cntlr_0.dcp' for cell 'arty_linux_p1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_dlmb_v10_0/arty_linux_p1_dlmb_v10_0.dcp' for cell 'arty_linux_p1_i/microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_ilmb_bram_if_cntlr_0/arty_linux_p1_ilmb_bram_if_cntlr_0.dcp' for cell 'arty_linux_p1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_ilmb_v10_0/arty_linux_p1_ilmb_v10_0.dcp' for cell 'arty_linux_p1_i/microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_lmb_bram_0/arty_linux_p1_lmb_bram_0.dcp' for cell 'arty_linux_p1_i/microblaze_0_local_memory/lmb_bram'
+INFO: [Netlist 29-17] Analyzing 1143 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0_board.xdc] for cell 'arty_linux_p1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0_board.xdc] for cell 'arty_linux_p1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0.xdc] for cell 'arty_linux_p1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2175.211 ; gain = 509.434 ; free physical = 126 ; free virtual = 9205
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0.xdc] for cell 'arty_linux_p1_i/clk_wiz_0/inst'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_mig_7series_0_0/arty_linux_p1_mig_7series_0_0/user_design/constraints/arty_linux_p1_mig_7series_0_0.xdc] for cell 'arty_linux_p1_i/mig_7series_0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_mig_7series_0_0/arty_linux_p1_mig_7series_0_0/user_design/constraints/arty_linux_p1_mig_7series_0_0.xdc] for cell 'arty_linux_p1_i/mig_7series_0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_mig_7series_0_0/arty_linux_p1_mig_7series_0_0_board.xdc] for cell 'arty_linux_p1_i/mig_7series_0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_mig_7series_0_0/arty_linux_p1_mig_7series_0_0_board.xdc] for cell 'arty_linux_p1_i/mig_7series_0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_0/arty_linux_p1_microblaze_0_0.xdc] for cell 'arty_linux_p1_i/microblaze_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_0/arty_linux_p1_microblaze_0_0.xdc] for cell 'arty_linux_p1_i/microblaze_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_axi_intc_0/arty_linux_p1_microblaze_0_axi_intc_0.xdc] for cell 'arty_linux_p1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_axi_intc_0/arty_linux_p1_microblaze_0_axi_intc_0.xdc] for cell 'arty_linux_p1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_mdm_1_0/arty_linux_p1_mdm_1_0.xdc] for cell 'arty_linux_p1_i/mdm_1/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_mdm_1_0/arty_linux_p1_mdm_1_0.xdc] for cell 'arty_linux_p1_i/mdm_1/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_rst_mig_7series_0_83M_0/arty_linux_p1_rst_mig_7series_0_83M_0_board.xdc] for cell 'arty_linux_p1_i/rst_mig_7series_0_83M/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_rst_mig_7series_0_83M_0/arty_linux_p1_rst_mig_7series_0_83M_0_board.xdc] for cell 'arty_linux_p1_i/rst_mig_7series_0_83M/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_rst_mig_7series_0_83M_0/arty_linux_p1_rst_mig_7series_0_83M_0.xdc] for cell 'arty_linux_p1_i/rst_mig_7series_0_83M/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_rst_mig_7series_0_83M_0/arty_linux_p1_rst_mig_7series_0_83M_0.xdc] for cell 'arty_linux_p1_i/rst_mig_7series_0_83M/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_uartlite_0_0/arty_linux_p1_axi_uartlite_0_0_board.xdc] for cell 'arty_linux_p1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_uartlite_0_0/arty_linux_p1_axi_uartlite_0_0_board.xdc] for cell 'arty_linux_p1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_uartlite_0_0/arty_linux_p1_axi_uartlite_0_0.xdc] for cell 'arty_linux_p1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_uartlite_0_0/arty_linux_p1_axi_uartlite_0_0.xdc] for cell 'arty_linux_p1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_ethernetlite_0_0/arty_linux_p1_axi_ethernetlite_0_0_board.xdc] for cell 'arty_linux_p1_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_ethernetlite_0_0/arty_linux_p1_axi_ethernetlite_0_0_board.xdc] for cell 'arty_linux_p1_i/axi_ethernetlite_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_ethernetlite_0_0/arty_linux_p1_axi_ethernetlite_0_0.xdc] for cell 'arty_linux_p1_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_ethernetlite_0_0/arty_linux_p1_axi_ethernetlite_0_0.xdc] for cell 'arty_linux_p1_i/axi_ethernetlite_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_timer_0_0/arty_linux_p1_axi_timer_0_0.xdc] for cell 'arty_linux_p1_i/axi_timer_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_timer_0_0/arty_linux_p1_axi_timer_0_0.xdc] for cell 'arty_linux_p1_i/axi_timer_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_smc_0/bd_0/ip/ip_1/bd_de01_psr_aclk_0_board.xdc] for cell 'arty_linux_p1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_smc_0/bd_0/ip/ip_1/bd_de01_psr_aclk_0_board.xdc] for cell 'arty_linux_p1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_smc_0/bd_0/ip/ip_1/bd_de01_psr_aclk_0.xdc] for cell 'arty_linux_p1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_smc_0/bd_0/ip/ip_1/bd_de01_psr_aclk_0.xdc] for cell 'arty_linux_p1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_dlmb_v10_0/arty_linux_p1_dlmb_v10_0.xdc] for cell 'arty_linux_p1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_dlmb_v10_0/arty_linux_p1_dlmb_v10_0.xdc] for cell 'arty_linux_p1_i/microblaze_0_local_memory/dlmb_v10/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_ilmb_v10_0/arty_linux_p1_ilmb_v10_0.xdc] for cell 'arty_linux_p1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_ilmb_v10_0/arty_linux_p1_ilmb_v10_0.xdc] for cell 'arty_linux_p1_i/microblaze_0_local_memory/ilmb_v10/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_0_0/arty_linux_p1_axi_gpio_0_0_board.xdc] for cell 'arty_linux_p1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_0_0/arty_linux_p1_axi_gpio_0_0_board.xdc] for cell 'arty_linux_p1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_0_0/arty_linux_p1_axi_gpio_0_0.xdc] for cell 'arty_linux_p1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_0_0/arty_linux_p1_axi_gpio_0_0.xdc] for cell 'arty_linux_p1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_1_0/arty_linux_p1_axi_gpio_1_0_board.xdc] for cell 'arty_linux_p1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_1_0/arty_linux_p1_axi_gpio_1_0_board.xdc] for cell 'arty_linux_p1_i/axi_gpio_1/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_1_0/arty_linux_p1_axi_gpio_1_0.xdc] for cell 'arty_linux_p1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_1_0/arty_linux_p1_axi_gpio_1_0.xdc] for cell 'arty_linux_p1_i/axi_gpio_1/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_2_0/arty_linux_p1_axi_gpio_2_0_board.xdc] for cell 'arty_linux_p1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_2_0/arty_linux_p1_axi_gpio_2_0_board.xdc] for cell 'arty_linux_p1_i/axi_gpio_2/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_2_0/arty_linux_p1_axi_gpio_2_0.xdc] for cell 'arty_linux_p1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_gpio_2_0/arty_linux_p1_axi_gpio_2_0.xdc] for cell 'arty_linux_p1_i/axi_gpio_2/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_quad_spi_0_0/arty_linux_p1_axi_quad_spi_0_0_board.xdc] for cell 'arty_linux_p1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_quad_spi_0_0/arty_linux_p1_axi_quad_spi_0_0_board.xdc] for cell 'arty_linux_p1_i/axi_quad_spi_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_quad_spi_0_0/arty_linux_p1_axi_quad_spi_0_0.xdc] for cell 'arty_linux_p1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_quad_spi_0_0/arty_linux_p1_axi_quad_spi_0_0.xdc] for cell 'arty_linux_p1_i/axi_quad_spi_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/constrs_1/new/eth_ref_clk.xdc]
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/constrs_1/new/eth_ref_clk.xdc]
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_axi_intc_0/arty_linux_p1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'arty_linux_p1_i/microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_axi_intc_0/arty_linux_p1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'arty_linux_p1_i/microblaze_0_axi_intc/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_ethernetlite_0_0/arty_linux_p1_axi_ethernetlite_0_0_clocks.xdc] for cell 'arty_linux_p1_i/axi_ethernetlite_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_ethernetlite_0_0/arty_linux_p1_axi_ethernetlite_0_0_clocks.xdc] for cell 'arty_linux_p1_i/axi_ethernetlite_0/U0'
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_quad_spi_0_0/arty_linux_p1_axi_quad_spi_0_0_clocks.xdc] for cell 'arty_linux_p1_i/axi_quad_spi_0/U0'
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_axi_quad_spi_0_0/arty_linux_p1_axi_quad_spi_0_0_clocks.xdc] for cell 'arty_linux_p1_i/axi_quad_spi_0/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'arty_linux_p1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 687 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 59 instances
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 34 instances
+  RAM16X1S => RAM32X1S (RAMS32): 4 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 442 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 38 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 11 instances
+
+link_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 2202.223 ; gain = 987.441 ; free physical = 148 ; free virtual = 9174
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+Command: report_drc (run_mandatory_drcs) for: opt_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2234.227 ; gain = 32.004 ; free physical = 125 ; free virtual = 9141
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 19 inverter(s) to 104 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1163a488a
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2234.227 ; gain = 0.000 ; free physical = 156 ; free virtual = 9072
+INFO: [Opt 31-389] Phase Retarget created 8 cells and removed 199 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Phase 2 Constant propagation | Checksum: f74bcc73
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2234.227 ; gain = 0.000 ; free physical = 118 ; free virtual = 9036
+INFO: [Opt 31-389] Phase Constant propagation created 317 cells and removed 1344 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 6561a65f
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2234.227 ; gain = 0.000 ; free physical = 124 ; free virtual = 8980
+INFO: [Opt 31-389] Phase Sweep created 1 cells and removed 1923 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 6561a65f
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2234.227 ; gain = 0.000 ; free physical = 124 ; free virtual = 8979
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 6561a65f
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2234.227 ; gain = 0.000 ; free physical = 124 ; free virtual = 8979
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2234.227 ; gain = 0.000 ; free physical = 122 ; free virtual = 8978
+Ending Logic Optimization Task | Checksum: 6561a65f
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2234.227 ; gain = 0.000 ; free physical = 121 ; free virtual = 8976
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
+WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 23 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 6 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 10 Total Ports: 46
+Ending PowerOpt Patch Enables Task | Checksum: 74eb5667
+
+Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.64 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 406 ; free virtual = 8572
+Ending Power Optimization Task | Checksum: 74eb5667
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 2626.953 ; gain = 392.727 ; free physical = 418 ; free virtual = 8586
+53 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:15 . Memory (MB): peak = 2626.953 ; gain = 424.730 ; free physical = 417 ; free virtual = 8587
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.42 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 389 ; free virtual = 8573
+INFO: [Common 17-1381] The checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/arty_linux_p1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 336 ; free virtual = 8536
+Command: report_drc -file arty_linux_p1_wrapper_drc_opted.rpt
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/arty_linux_p1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 237 ; free virtual = 8465
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
+Command: report_drc (run_mandatory_drcs) for: incr_eco_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+Command: report_drc (run_mandatory_drcs) for: placer_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg has an input control pin arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg/ENARDEN (net: arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg_i_3_n_0) which is driven by a register (arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/gv.ram_valid_d1_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg has an input control pin arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg/ENARDEN (net: arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg_i_3_n_0) which is driven by a register (arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/gv.ram_valid_d1_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.76 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 132 ; free virtual = 8413
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 49ef88b1
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:02 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 131 ; free virtual = 8413
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 131 ; free virtual = 8402
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 12e985e83
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 131 ; free virtual = 8383
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1f510f844
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:00 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 164 ; free virtual = 8144
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1f510f844
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:00 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 162 ; free virtual = 8142
+Phase 1 Placer Initialization | Checksum: 1f510f844
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:00 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 159 ; free virtual = 8139
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: b6185733
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:43 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1745 ; free virtual = 9468
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: b6185733
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:43 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1741 ; free virtual = 9465
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 18f606d33
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:02:52 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1518 ; free virtual = 9262
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: aee2cad9
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:52 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1518 ; free virtual = 9262
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: f1d5ae99
+
+Time (s): cpu = 00:03:26 ; elapsed = 00:02:52 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1518 ; free virtual = 9262
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 188cfbd34
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:02:55 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1241 ; free virtual = 8988
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 188cfbd34
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:56 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1128 ; free virtual = 8875
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 22dc086a1
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:03:15 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1680 ; free virtual = 9429
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 22c0484f8
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:03:17 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1536 ; free virtual = 9293
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 22c0484f8
+
+Time (s): cpu = 00:03:51 ; elapsed = 00:03:17 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1491 ; free virtual = 9251
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: 1c508dbf4
+
+Time (s): cpu = 00:04:00 ; elapsed = 00:03:24 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1037 ; free virtual = 8824
+Phase 3 Detail Placement | Checksum: 1c508dbf4
+
+Time (s): cpu = 00:04:01 ; elapsed = 00:03:24 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1087 ; free virtual = 8879
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19ef3ae75
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+INFO: [Place 46-38] Processed net arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/sync_reset, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-41] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19ef3ae75
+
+Time (s): cpu = 00:04:28 ; elapsed = 00:03:46 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1654 ; free virtual = 9461
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.612. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: e08e95c3
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:03:49 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1440 ; free virtual = 9250
+Phase 4.1 Post Commit Optimization | Checksum: e08e95c3
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:03:50 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1440 ; free virtual = 9250
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: e08e95c3
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:03:50 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1292 ; free virtual = 9107
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: e08e95c3
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:03:51 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1205 ; free virtual = 9018
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 14da1860f
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:03:51 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1182 ; free virtual = 8994
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 14da1860f
+
+Time (s): cpu = 00:04:34 ; elapsed = 00:03:52 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1109 ; free virtual = 8922
+Ending Placer Task | Checksum: 1217cbb1b
+
+Time (s): cpu = 00:04:34 ; elapsed = 00:03:52 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1080 ; free virtual = 8894
+73 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:04:49 ; elapsed = 00:04:05 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1065 ; free virtual = 8883
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1538 ; free virtual = 9412
+INFO: [Common 17-1381] The checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/arty_linux_p1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1278 ; free virtual = 9123
+report_io: Time (s): cpu = 00:00:00.49 ; elapsed = 00:00:02 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1010 ; free virtual = 8859
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 973 ; free virtual = 8838
+report_control_sets: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 965 ; free virtual = 8825
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
+Running DRC as a precondition to command route_design
+Command: report_drc (run_mandatory_drcs) for: router_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 44354218 ConstDB: 0 ShapeSum: dd477903 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1969c2b74
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1438 ; free virtual = 9387
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1969c2b74
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1435 ; free virtual = 9385
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1969c2b74
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1419 ; free virtual = 9371
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1969c2b74
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1419 ; free virtual = 9371
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1b075ac1c
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:35 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1400 ; free virtual = 9348
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.813  | TNS=0.000  | WHS=-0.428 | THS=-710.673|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1dbbb77c7
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:41 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1394 ; free virtual = 9343
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.813  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1ad0a3fca
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:41 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1392 ; free virtual = 9343
+Phase 2 Router Initialization | Checksum: 2004c8d55
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:41 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1392 ; free virtual = 9343
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 13653e6ce
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:47 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9339
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2856
+ Number of Nodes with overlaps = 279
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.156  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1d00746b7
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:01:04 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1386 ; free virtual = 9338
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.156  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 179d935ad
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:05 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9339
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.156  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1ccbd6eba
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:06 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+Phase 4 Rip-up And Reroute | Checksum: 1ccbd6eba
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:06 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1ccbd6eba
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:07 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1ccbd6eba
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:07 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+Phase 5 Delay and Skew Optimization | Checksum: 1ccbd6eba
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:07 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1a10f6a0e
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:09 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.164  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 187b8e308
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:09 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+Phase 6 Post Hold Fix | Checksum: 187b8e308
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:09 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 8.74177 %
+  Global Horizontal Routing Utilization  = 10.2874 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 187b8e308
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:09 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 187b8e308
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:09 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1388 ; free virtual = 9340
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1aca16197
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:11 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1387 ; free virtual = 9339
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.164  | TNS=0.000  | WHS=0.013  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1aca16197
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:12 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1387 ; free virtual = 9339
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:35 ; elapsed = 00:01:12 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1417 ; free virtual = 9369
+
+Routing Is Done.
+88 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:48 ; elapsed = 00:01:22 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1416 ; free virtual = 9369
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1349 ; free virtual = 9351
+INFO: [Common 17-1381] The checkpoint '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/arty_linux_p1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 2626.953 ; gain = 0.000 ; free physical = 1392 ; free virtual = 9358
+Command: report_drc -file arty_linux_p1_wrapper_drc_routed.rpt -pb arty_linux_p1_wrapper_drc_routed.pb -rpx arty_linux_p1_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/arty_linux_p1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 2638.973 ; gain = 12.020 ; free physical = 1364 ; free virtual = 9332
+Command: report_methodology -file arty_linux_p1_wrapper_methodology_drc_routed.rpt -rpx arty_linux_p1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/arty_linux_p1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:01:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2638.973 ; gain = 0.000 ; free physical = 1217 ; free virtual = 9188
+Command: report_power -file arty_linux_p1_wrapper_power_routed.rpt -pb arty_linux_p1_wrapper_power_summary_routed.pb -rpx arty_linux_p1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
+WARNING: [Designutils 20-266] Invalid Voltage Source VCCINTIO for the family artix7. Ignoring the voltage setting.
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+95 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 2684.992 ; gain = 46.020 ; free physical = 1161 ; free virtual = 9153
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 15 12:43:08 2017...
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Jul 15 12:43:48 2017
+# Process ID: 7913
+# Current directory: /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1
+# Command line: vivado -log arty_linux_p1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source arty_linux_p1_wrapper.tcl -notrace
+# Log file: /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/arty_linux_p1_wrapper.vdi
+# Journal file: /home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source arty_linux_p1_wrapper.tcl -notrace
+Command: open_checkpoint arty_linux_p1_wrapper_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1087.012 ; gain = 0.000 ; free physical = 2297 ; free virtual = 10564
+INFO: [Netlist 29-17] Analyzing 1017 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/.Xil/Vivado-7913-ramprasad-ThinkPad-T420/dcp3/arty_linux_p1_wrapper_board.xdc]
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/.Xil/Vivado-7913-ramprasad-ThinkPad-T420/dcp3/arty_linux_p1_wrapper_board.xdc]
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/.Xil/Vivado-7913-ramprasad-ThinkPad-T420/dcp3/arty_linux_p1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.srcs/sources_1/bd/arty_linux_p1/ip/arty_linux_p1_clk_wiz_0_0/arty_linux_p1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 2030.273 ; gain = 502.445 ; free physical = 1293 ; free virtual = 9715
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/.Xil/Vivado-7913-ramprasad-ThinkPad-T420/dcp3/arty_linux_p1_wrapper_early.xdc]
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/.Xil/Vivado-7913-ramprasad-ThinkPad-T420/dcp3/arty_linux_p1_wrapper.xdc]
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/.Xil/Vivado-7913-ramprasad-ThinkPad-T420/dcp3/arty_linux_p1_wrapper.xdc]
+Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/.Xil/Vivado-7913-ramprasad-ThinkPad-T420/dcp3/arty_linux_p1_wrapper_late.xdc]
+Finished Parsing XDC File [/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/.Xil/Vivado-7913-ramprasad-ThinkPad-T420/dcp3/arty_linux_p1_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2080.148 ; gain = 17.203 ; free physical = 1250 ; free virtual = 9667
+Restored from archive | CPU: 2.040000 secs | Memory: 28.635147 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2080.148 ; gain = 17.203 ; free physical = 1250 ; free virtual = 9667
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 564 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 59 instances
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, OBUFTDS, OBUFTDS, INV): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 79 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 33 instances
+  RAM16X1S => RAM32X1S (RAMS32): 4 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 325 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 11 instances
+  SRLC16E => SRL16E: 1 instances
+  SRLC32E => SRL16E: 1 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.2 (64-bit) build 1909853
+open_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2080.148 ; gain = 993.137 ; free physical = 1315 ; free virtual = 9680
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+WARNING: [Memdata 28-169] Found XPM memory block arty_linux_p1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory with a MEM.ADDRESS_SPACE property. However, the P_MEMORY_PRIMITIVE property is required and should be set to block.
+Command: write_bitstream -force arty_linux_p1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti-csg324'
+Running DRC as a precondition to command write_bitstream
+Command: report_drc (run_mandatory_drcs) for: bitstream_checks
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer qspi_flash_sck_iobuf/IBUF has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC BUFC-1] Input Buffer Connections: Input buffer qspi_flash_ss_iobuf/IBUF has no loads. It is recommended to have an input buffer drive an internal load.
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC DPIP-1] Input pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I4/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I4/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I4/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I4/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 output arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.Doing_mul64.Virtex_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 multiplier stage arty_linux_p1_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1709] Clock output buffering: PLLE2_ADV connectivity violation. The signal arty_linux_p1_i/mig_7series_0/u_arty_linux_p1_mig_7series_0_0_mig/u_ddr3_infrastructure/pll_clk3_out on the arty_linux_p1_i/mig_7series_0/u_arty_linux_p1_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i/CLKOUT3 pin of arty_linux_p1_i/mig_7series_0/u_arty_linux_p1_mig_7series_0_0_mig/u_ddr3_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg has an input control pin arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg/ENARDEN (net: arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PING/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg_i_3_n_0) which is driven by a register (arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/gv.ram_valid_d1_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg has an input control pin arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg/ENARDEN (net: arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/RX_PONG_GEN.RX_PONG_I/xpm_mem_gen.xpm_memory_inst/xpm_memory_base_inst/gen_wr_b.gen_word_wide.mem_reg_i_3_n_0) which is driven by a register (arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grhf.rhf/gv.ram_valid_d1_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 10 net(s) have no routable loads. The problem bus(es) and/or net(s) are arty_linux_p1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, arty_linux_p1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, arty_linux_p1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, arty_linux_p1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, arty_linux_p1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, arty_linux_p1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid, arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2], arty_linux_p1_i/axi_ethernetlite_0/U0/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2], arty_linux_p1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2], and arty_linux_p1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg[2].
+report_drc (run_mandatory_drcs) completed successfully
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 17 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 4 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./arty_linux_p1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/ramprasad/arty_projects_10-7-2017/arty_linux/arty_linux.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat Jul 15 12:45:23 2017. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+18 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:58 ; elapsed = 00:00:34 . Memory (MB): peak = 2512.309 ; gain = 432.156 ; free physical = 1180 ; free virtual = 9610
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 15 12:45:23 2017...
