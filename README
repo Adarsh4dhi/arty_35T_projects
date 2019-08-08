@@ -1,36 +1,71 @@
-Steps to start using the bitfile and image
-1. Steps to load bit file
+Steps to start using the bitfile and creating and using linux-image
+
+1. HDF to Petalinux
+   a. Steps to load bit file
    	*open the project in vivado.
+	*Go to File > Export > Export Hardware. Check Include Bitstream (This will create .hdf file)
    	*In the Flow Navigator > Program and Debug > open target > in target device click on auto connect.
    	*In the green Banner click on program device.
   	*go to the target bit file and select finish.
-2.Steps to open putty
-   	*Open a new terminal
-   	*sudo putty -serial /dev/dev/ttyUSB1 -serfg 115200,8,n,1,N
-3. command to load linux image
+   b. command to load linux image
    	*open a new terminal.
 	*first source peta linux in a new terminal.
 	*the source file is present in petalinux binaries > settings.sh
 	*source settings.sh.
 	*Go to the file that has the image file.
 	*it will be in petalinux_fullsystem>images>linux>images.elf
-	*type xmd in Xterm.
+2. XSDB to load bitfile & linux image.
+   	*in the terminal type 'xterm' for xmd terminal.
 	*the XMD terminal will be opened.
-	*in the xmd terminal type 'connect mb mdm'
+	*in the xmd terminal type 'xsdb'. 
+	*in the xmd terminal type 'connect'
+	*connect with the target xc7a3t>>MicroBlaze using 'ta' , 'ta <port number>' respectively.
 	*the system is now connected and then we have to download the image file.
 	*type the command 'dow image.elf'. make sure that you are present in the same directory the image file is present
 	*The downloading phase starts.
-	*connect the device with starting address by typing 'con 0x80000000'
+	*connect the device with starting address by typing 'con -addr 0x80000000'
 	*If a error comes (type stop and then type reset.Again start by downloading the image.elf file.)
+3. Console Terminal
+   	*Open a new terminal
+   	*in the terminal type 'sudo putty -serial /dev/dev/ttyUSB1 -sercfg 115200,8,n,1,N'  
+	*Now you can find the PUTTY terminal finish its run. it takes some minutes to finish running. we can say it has fully run when it shows the root login. login id and password is 'root'.
+4. Example Application
+   -- Through petalinux
+      a.Add User Application to PetaLinux
+	*To create a user application, we again need the petalinux-create command.
+	*From the project directory enter the command 'petalinux-create -t apps --template c++ --name app1'
+	*The new apps will be created in the project folder in “...../recipes-apps/app1”
+	*The above command will create a app1 directory in '<project_directory>/project-spec/meta-user/recipes-apps --template c++'
+	*From the above command will create a basic c++ template of Hello World!	
+	 program source code in the files directory. Add your custom source code in that
+	 directory and modify the Makefile to compile all your source codes.
+	*Now the application is ready for compilation
+      b.Compile and building the PetaLinux	
+	*We are building our application with the petalinux build. We have to tell petalinux that we wrote a application and we need to build it. To do so we should use petalinux-config command.
+ 	 'petalinux-config -c kernel'
+ 	 'petalinux-config -c rootfs'
+	 The menu config for root file system will open. We have to choose apps. In that menu our app will be visible and we need to toggle on our app. Save the config file and then petalinux is ready for final 		 building.
+	*The build command that will build the petalinux is 'petalinux-build'
+      c.Boot the Linux in emulator
+	*To boot the linux image to the emulator we must use the command 'petalinux-boot --qemu --kernel'
+	*Now the petalinux will be booted in the emulator and is ready for use. Id root and
+	 password root.
+	*To run the app in the emulator just call the app project name 'app1'
 	
-4. login into putty and run example
-	*Now you can find the PUTTY terminal finish its run. it takes some minutes to finish running. we can say it has fully run when it shows the root login. login id and password is 		'root'.
-	*Type gpio-demo-g 508 -o 0xf
+   -- GPIO Application Run and Test
+	*Now you can find the PUTTY terminal finish its run. it takes some minutes to finish running. we can say it has fully run when it shows the root login. login id and password is 'root'.
+	*Type 'gpio-demo-g 508 -o 0xf'
 	*Here 508 denotes the device_id. to find the different device id's we have to find the root where the details regarding it is present.
-	*For that go to the normal terminal and go to directory 
-	/home/ramprasad/arty_projects_10-7-2017/petalinux_arty_fullsystem/peta_p2/project-spec/meta-user/recipes-apps/gpio-demo/files
+	*For that go to the normal terminal and go to directory /home/ramprasad/arty_projects_10-7-2017/petalinux_arty_fullsystem/peta_p2/project-spec/meta-user/recipes-apps/gpio-demo/files
 	*There you will find the file 'gpio-demo.c'.Open it using gvim.
 	*In the c file you will find the gpio root in the '#define GPIO_ROOT "/sys/class/gpio" '
 	*go to PUTTY terminal and go the root mentioned in the above point.
 	*there you will find the device id's.
 	* Now type 'gpio-demo-g 508 -o 0xf'
+
+   -- Through cross-compile
+	*From the project directory enter the following command for create a user application. 'petalinux-create -t apps --template c++ --name app1'
+	*find the microblaze gcc compiler 
+	*in terminal type 'export CROSS_COMPILE <path>' 
+	*in terminal type 'export ARCH=aarch64'
+	*compile the application
